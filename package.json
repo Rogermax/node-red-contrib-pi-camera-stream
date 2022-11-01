@@ -1,0 +1,31 @@
+{
+  "name": "node-red-contrib-pi-camera-stream",
+  "version": "0.0.1",
+  "description": "Node red node to get raspberry pi camera stream",
+  "main": "pi-camera-stream.js",
+  "node-red": {
+    "nodes": {
+      "pi-camera-stream": "pi-camera-stream.js"
+    }
+  },
+  "scripts": {
+    "test": "cross-env-shell NODE_ENV=test mocha \"test/**/*_spec.js\"",
+    "node-red": "node-red"
+  },
+  "keywords": [
+    "pi",
+    "camera",
+    "stream"
+  ],
+  "author": "Roger De Moreta",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "mocha": "^10.1.0",
+    "node-red": "^3.0.2",
+    "node-red-node-test-helper": "^0.3.0"
+  },
+  "dependencies": {
+    "pi-camera-connect": "^0.3.4"
+  }
+}
